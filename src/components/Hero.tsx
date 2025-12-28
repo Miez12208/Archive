@@ -6,7 +6,7 @@ export default function Hero() {
     const [wordIndex, setWordIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const words = ["Downloads.", "Experience.", "Performance.", "Stability."];
+    const words = ["smooth.", "Downloads.", "Performance.", "Stability."];
     const typingSpeed = 150;
     const deletingSpeed = 100;
     const pauseTime = 2000; // Pause before deleting
@@ -51,7 +51,7 @@ export default function Hero() {
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <h1 className="text-5xl md:text-[8rem] font-bold leading-tight md:leading-none tracking-tighter text-white select-none">
-                    Essential
+                    Miez Archive
                     <span className="block text-primary min-h-[1.1em]">
                         {text}<span className="animate-pulse">_</span>
                     </span>

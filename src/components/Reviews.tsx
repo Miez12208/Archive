@@ -2,55 +2,66 @@
 
 const REVIEWS = [
     {
-        name: "miez",
+        name: "Xhn Cibaduyut",
         rating: 5,
-        text: "lorem ipsum",
-        rom: "Evolution X"
+        text: "ROM gaymink wir",
+        rom: "Axion OS",
+        avatar: "/avatars/xhn.jpg"
     },
     {
         name: "Kidzz",
-        rating: 1,
-        text: "ROM nya kek kontol awoawkaowk",
-        rom: "LineageOS"
+        rating: 3,
+        text: "Jelek banget rom nya terlalu polos mana ga ada kustomisasi lagi awoakwaok rom kontol gini di pake di jaman 2025 mikir kids.",
+        rom: "LineageOS",
+        avatar: "/avatars/kidzz.jpg"
     },
     {
-        name: "Citra Dewi",
-        rating: 4,
-        text: "crDroid customization is insane! So many options to tweak.",
-        rom: "crDroid"
+        name: "Rusdi Ngawi",
+        rating: 5,
+        text: "crDroid customization is insane! So many options to tweak. Perfect untuk yang suka personalisasi.",
+        rom: "crDroid",
+        avatar: "/avatars/rusdi.png"
     },
     {
         name: "Dimas Anggara",
         rating: 5,
-        text: "Pixel Experience feels exactly like a Pixel. Clean and stable.",
-        rom: "Pixel Experience"
+        text: "Pixel Experience feels exactly like a Pixel. Clean, stable, dan update rutin. Best stock-like ROM!",
+        rom: "Pixel Experience",
+        avatar: "/avatars/dimas.png"
     },
     {
         name: "Eko Prasetyo",
         rating: 5,
-        text: "RisingOS UI is beautiful. Love the new control center style.",
-        rom: "RisingOS"
+        text: "RisingOS UI is beautiful. Love the new control center style. Animasinya juga buttery smooth.",
+        rom: "RisingOS",
+        avatar: "/avatars/eko.png"
     },
     {
         name: "Fajar Nugraha",
-        rating: 4,
-        text: "Gaming performance on Nusantara Project is top notch. MLBB 120fps stable.",
-        rom: "Nusantara Project"
+        rating: 5,
+        text: "Gaming performance on Nusantara Project is top notch. MLBB 120fps stable tanpa lag!",
+        rom: "Nusantara Project",
+        avatar: "/avatars/fajar.png"
     }
 ];
 
 export default function Reviews() {
     return (
-        <section className="py-20 bg-black overflow-hidden relative">
-            <div className="max-w-7xl mx-auto px-6 mb-10 text-center">
-                <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60">
-                    Community Reviews
+        <section className="py-24 bg-black overflow-hidden relative">
+            {/* Background Effects */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
+
+            <div className="max-w-7xl mx-auto px-6 mb-16 text-center relative z-10">
+                <h2 className="text-4xl md:text-6xl font-bold mb-4">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/60">
+                        Community Reviews
+                    </span>
                 </h2>
             </div>
 
-            {/* Gradient Masks for fading effect */}
-            <div className="absolute top-0 bottom-0 left-0 w-20 z-10 bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
-            <div className="absolute top-0 bottom-0 right-0 w-20 z-10 bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
+            {/* Gradient Masks */}
+            <div className="absolute top-0 bottom-0 left-0 w-32 z-10 bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 bottom-0 right-0 w-32 z-10 bg-gradient-to-l from-black via-black/50 to-transparent pointer-events-none"></div>
 
             <div className="flex animate-marquee">
                 {/* Original Set */}
@@ -59,7 +70,7 @@ export default function Reviews() {
                         <ReviewCard key={`original-${i}`} review={review} />
                     ))}
                 </div>
-                {/* Duplicate Set for infinite loop */}
+                {/* Duplicate Set */}
                 <div className="flex gap-6 pr-6">
                     {REVIEWS.map((review, i) => (
                         <ReviewCard key={`duplicate-${i}`} review={review} />
@@ -72,32 +83,64 @@ export default function Reviews() {
 
 function ReviewCard({ review }: { review: typeof REVIEWS[0] }) {
     return (
-        <div className="w-[300px] md:w-[400px] bg-zinc-900/30 border border-white/5 p-6 rounded-xl flex-shrink-0 backdrop-blur-sm hover:border-primary/20 transition-colors">
-            <div className="flex justify-between items-start mb-4">
-                <div>
-                    <h4 className="font-bold text-white">{review.name}</h4>
-                    <span className="text-xs text-primary font-medium">{review.rom}</span>
+        <div className="group w-[380px] bg-gradient-to-br from-zinc-900/50 to-zinc-900/30 border border-white/10 p-8 rounded-2xl flex-shrink-0 backdrop-blur-xl hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 relative overflow-hidden">
+            {/* Glow Effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+            {/* Content */}
+            <div className="relative z-10">
+                {/* Header */}
+                <div className="flex items-start gap-4 mb-6">
+                    {/* Avatar */}
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                        <img
+                            src={review.avatar}
+                            alt={review.name}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+
+                    {/* Name & ROM */}
+                    <div className="flex-1 min-w-0">
+                        <h4 className="font-bold text-white text-lg mb-1">{review.name}</h4>
+                        <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full">
+                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                            <span className="text-xs text-primary font-semibold">{review.rom}</span>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex gap-0.5">
+
+                {/* Stars */}
+                <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                         <svg
                             key={i}
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
+                            width="18"
+                            height="18"
                             viewBox="0 0 24 24"
                             fill={i < review.rating ? "currentColor" : "none"}
                             stroke="currentColor"
-                            className={i < review.rating ? "text-yellow-400" : "text-gray-600"}
+                            strokeWidth="1.5"
+                            className={i < review.rating ? "text-yellow-400" : "text-zinc-700"}
                         >
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                         </svg>
                     ))}
                 </div>
+
+                {/* Review Text */}
+                <p className="text-gray-300 text-sm leading-relaxed">
+                    "{review.text}"
+                </p>
+
+                {/* Quote Icon */}
+                <div className="absolute top-6 right-6 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                    </svg>
+                </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-                "{review.text}"
-            </p>
         </div>
     );
 }
