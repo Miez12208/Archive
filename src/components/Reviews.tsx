@@ -54,13 +54,13 @@ export default function Reviews() {
 
             <div className="flex animate-marquee">
                 {/* Original Set */}
-                <div className="flex gap-6 pr-32">
+                <div className="flex gap-6 pr-6">
                     {REVIEWS.map((review, i) => (
                         <ReviewCard key={`original-${i}`} review={review} />
                     ))}
                 </div>
                 {/* Duplicate Set for infinite loop */}
-                <div className="flex gap-6 pr-32">
+                <div className="flex gap-6 pr-6">
                     {REVIEWS.map((review, i) => (
                         <ReviewCard key={`duplicate-${i}`} review={review} />
                     ))}
