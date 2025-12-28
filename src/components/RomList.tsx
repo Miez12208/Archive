@@ -1,5 +1,6 @@
 'use client';
 import RomCard from './RomCard';
+import FadeIn from './FadeIn';
 
 const ROM_DATA = [
     {
@@ -64,7 +65,9 @@ export default function RomList() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {ROM_DATA.map((rom, idx) => (
-                        <RomCard key={idx} rom={rom} />
+                        <FadeIn key={idx} delay={idx * 100}>
+                            <RomCard rom={rom} />
+                        </FadeIn>
                     ))}
                 </div>
             </div>
