@@ -13,7 +13,6 @@ interface RomProps {
     color?: string;
     downloadUrl?: string;
     variant?: 'GApps' | 'Vanilla';
-    changelogUrl?: string;
     notes?: string;
 }
 
@@ -133,27 +132,26 @@ export default function RomCard({ rom }: { rom: RomProps }) {
                         {/* Expanded Content */}
                         <div className={`overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                             <div className="space-y-3 text-sm">
-                                {rom.changelogUrl && rom.changelogUrl !== '#' && (
-                                    <div className="flex justify-between items-center">
-                                        <span className="text-gray-500">Changelog</span>
-                                        <a
-                                            href={rom.changelogUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-primary hover:underline flex items-center gap-1"
-                                        >
-                                            View
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                                <polyline points="15 3 21 3 21 9"></polyline>
-                                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                )}
                                 {rom.notes && (
                                     <div className="mt-2 p-3 bg-white/5 rounded-lg border border-white/10">
-                                        <p className="text-gray-300 text-xs leading-relaxed whitespace-pre-line">{rom.notes}</p>
+                                        <p className="text-gray-300 text-xs leading-relaxed whitespace-pre-line">
+                                            {rom.notes.split(/(https?:\/\/[^\s]+)/g).map((part, index) => {
+                                                if (part.match(/^https?:\/\//)) {
+                                                    return (
+                                                        <a
+                                                            key={index}
+                                                            href={part}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="text-primary hover:underline break-all"
+                                                        >
+                                                            {part}
+                                                        </a>
+                                                    );
+                                                }
+                                                return part;
+                                            })}
+                                        </p>
                                     </div>
                                 )}
                             </div>
