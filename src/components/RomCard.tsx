@@ -109,7 +109,7 @@ export default function RomCard({ rom }: { rom: RomProps }) {
                                 href={rom.changelogUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="py-2.5 px-6 bg-white text-black rounded-lg font-semibold text-sm hover:bg-gray-100 transition-all flex items-center gap-2 group"
+                                className="py-2.5 px-6 bg-black border border-white/20 text-white rounded-lg font-semibold text-sm hover:bg-white/10 transition-all flex items-center gap-2 group"
                             >
                                 Changelogs
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform">
