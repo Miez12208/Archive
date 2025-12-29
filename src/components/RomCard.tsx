@@ -53,7 +53,7 @@ export default function RomCard({ rom }: { rom: RomProps }) {
                             href={rom.downloadUrl || '#'}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-primary text-black rounded-lg font-semibold text-sm hover:bg-primary/80 transition-all flex items-center gap-2 group"
+                            className="px-4 py-2 bg-white text-black rounded-lg font-semibold text-sm hover:bg-gray-100 transition-all flex items-center gap-2 group"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-y-0.5 transition-transform">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -104,19 +104,21 @@ export default function RomCard({ rom }: { rom: RomProps }) {
 
                     {/* Changelogs Button */}
                     {rom.changelogUrl && (
-                        <a
-                            href={rom.changelogUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-4 w-full py-2.5 bg-white text-black text-center rounded-lg font-semibold text-sm hover:bg-gray-100 transition-all flex items-center justify-center gap-2 group"
-                        >
-                            Changelogs
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </a>
+                        <div className="flex justify-start mt-4">
+                            <a
+                                href={rom.changelogUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="py-2.5 px-6 bg-white text-black rounded-lg font-semibold text-sm hover:bg-gray-100 transition-all flex items-center gap-2 group"
+                            >
+                                Changelogs
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
                     )}
                 </div>
             </div>
