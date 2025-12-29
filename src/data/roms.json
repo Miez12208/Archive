@@ -10,7 +10,8 @@
         "image": "/images/roms/Sweet.png",
         "downloadUrl": "https://cdn.evolution-x.org/sweet/16/EvolutionX-16.0-20250921-sweet-11.2-Official.zip/download",
         "variant": "GApps",
-        "changelogUrl": "#"
+        "changelogUrl": "#",
+        "notes": "• Based on Redmi Note 12 Pro 4G Indonesia firmware\n• Android Rescue Party have been disabled\n• System Launcher have been updated to v25.1.4583"
     },
     {
         "name": "LineageOS",

@@ -6,7 +6,7 @@ export default function Hero() {
     const [wordIndex, setWordIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const words = ["Stability.", "Performance.", "Smooth.", "Sweet."];
+    const words = ["Stability.", "Performance.", "Smooth.", "And More."];
     const typingSpeed = 150;
     const deletingSpeed = 100;
     const pauseTime = 2000; // Pause before deleting

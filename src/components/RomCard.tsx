@@ -1,3 +1,6 @@
+'use client';
+import { useState } from 'react';
+
 interface RomProps {
     name: string;
     version: string;
@@ -11,9 +14,11 @@ interface RomProps {
     downloadUrl?: string;
     variant?: 'GApps' | 'Vanilla';
     changelogUrl?: string;
+    notes?: string;
 }
 
 export default function RomCard({ rom }: { rom: RomProps }) {
+    const [isExpanded, setIsExpanded] = useState(false);
 
 
     return (
@@ -102,24 +107,58 @@ export default function RomCard({ rom }: { rom: RomProps }) {
                         <span className="text-xs text-gray-600">{rom.updatedAt}</span>
                     </div>
 
-                    {/* Changelogs Button */}
-                    {rom.changelogUrl && (
-                        <div className="flex justify-start mt-4">
-                            <a
-                                href={rom.changelogUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="py-2.5 px-6 bg-black border border-white/20 text-white rounded-lg font-semibold text-sm hover:bg-white/10 transition-all flex items-center gap-2 group"
+                    {/* Expandable Details Section */}
+                    <div className="mt-4 border-t border-white/5 pt-4">
+                        <button
+                            onClick={() => setIsExpanded(!isExpanded)}
+                            className="w-full flex justify-between items-center text-sm text-gray-400 hover:text-white transition-colors"
+                        >
+                            <span>Details</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className={`transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
                             >
-                                Changelogs
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+
+                        {/* Expanded Content */}
+                        <div className={`overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+                            <div className="space-y-3 text-sm">
+                                {rom.changelogUrl && rom.changelogUrl !== '#' && (
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-gray-500">Changelog</span>
+                                        <a
+                                            href={rom.changelogUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-primary hover:underline flex items-center gap-1"
+                                        >
+                                            View
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                )}
+                                {rom.notes && (
+                                    <div className="mt-2 p-3 bg-white/5 rounded-lg border border-white/10">
+                                        <p className="text-gray-300 text-xs leading-relaxed whitespace-pre-line">{rom.notes}</p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
-                    )}
+                    </div>
                 </div>
             </div>
         </div>
