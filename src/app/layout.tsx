@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
-  title: "Miez's Archive",
-  description: "Curated Android ROMs by Miez.",
+  title: "Sweet Archive",
+  description: "Refined Pixel-like ROMs for Redmi Note 10 PRO/MAX (sweet).",
 };
 
 export default function RootLayout({
@@ -20,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>

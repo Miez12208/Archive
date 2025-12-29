@@ -50,7 +50,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black z-0 pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto relative z-10 text-center">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white select-none">
+                <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight text-white select-none">
                     Sweet Archive,
                     <span className="block min-h-[1.1em] bg-gradient-to-r from-primary via-emerald-400 to-cyan-400 bg-clip-text text-transparent">
                         {text}

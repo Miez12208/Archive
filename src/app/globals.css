@@ -1,5 +1,54 @@
 @import "tailwindcss";
 
+/* Torus Font Family */
+@font-face {
+  font-family: 'Torus';
+  src: url('/fonts/Torus-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Torus';
+  src: url('/fonts/Torus-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Torus';
+  src: url('/fonts/Torus-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Torus';
+  src: url('/fonts/Torus-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Torus';
+  src: url('/fonts/Torus-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Torus';
+  src: url('/fonts/Torus-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #000000;
   /* Pure Black */
@@ -15,7 +64,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-card: var(--card);
-  --font-sans: var(--font-inter);
+  --font-sans: 'Torus', system-ui, sans-serif;
 }
 
 /* Smooth scrolling */
@@ -46,7 +95,7 @@ html {
 body {
   background: #000000;
   color: #fafafa;
-  font-family: var(--font-inter), sans-serif;
+  font-family: 'Torus', system-ui, sans-serif;
   overflow-x: hidden;
 }
 
