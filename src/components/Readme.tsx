@@ -17,10 +17,10 @@ export default function Readme() {
                                 <line x1="12" y1="16" x2="12" y2="12"></line>
                                 <line x1="12" y1="8" x2="12.01" y2="8"></line>
                             </svg>
-                            Sebelum Flash ROM
+                            Before Flashing ROM
                         </h3>
                         <p className="text-gray-400 leading-relaxed">
-                            Pastikan Anda sudah membaca panduan ini dengan seksama sebelum melakukan flashing ROM. Proses ini akan menghapus semua data di perangkat Anda.
+                            Make sure you have read this guide carefully before flashing the ROM. This process will delete all data on your device.
                         </p>
                     </div>
 
@@ -30,28 +30,28 @@ export default function Readme() {
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            Persyaratan
+                            Requirements
                         </h3>
                         <ul className="space-y-3 text-gray-400">
                             <li className="flex items-start gap-3">
                                 <span className="text-primary mt-1">•</span>
-                                <span>Bootloader sudah di-unlock</span>
+                                <span>Bootloader must be unlocked</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary mt-1">•</span>
-                                <span>Custom Recovery (TWRP/OrangeFox) sudah terinstall</span>
+                                <span>Custom Recovery (TWRP/OrangeFox) must be installed</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary mt-1">•</span>
-                                <span>Backup semua data penting Anda</span>
+                                <span>Backup all important data</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary mt-1">•</span>
-                                <span>Baterai minimal 60%</span>
+                                <span>Battery must be at least 60%</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary mt-1">•</span>
-                                <span>Download ROM yang sesuai dengan device Anda</span>
+                                <span>Download ROM that matches your device</span>
                             </li>
                         </ul>
                     </div>
@@ -67,28 +67,28 @@ export default function Readme() {
                                 <line x1="3" y1="12" x2="3.01" y2="12"></line>
                                 <line x1="3" y1="18" x2="3.01" y2="18"></line>
                             </svg>
-                            Langkah Instalasi
+                            Installation Steps
                         </h3>
                         <ol className="space-y-4 text-gray-400">
                             <li className="flex items-start gap-3">
                                 <span className="text-primary font-bold min-w-[24px]">1.</span>
-                                <span>Reboot ke Recovery Mode (TWRP/OrangeFox)</span>
+                                <span>Reboot to Recovery Mode (TWRP/OrangeFox)</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary font-bold min-w-[24px]">2.</span>
-                                <span>Wipe Data, Cache, dan Dalvik Cache</span>
+                                <span>Wipe Data, Cache, and Dalvik Cache</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary font-bold min-w-[24px]">3.</span>
-                                <span>Format Data (ketik "yes" untuk konfirmasi)</span>
+                                <span>Format Data (type "yes" to confirm)</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary font-bold min-w-[24px]">4.</span>
-                                <span>Install ROM file (.zip) yang sudah didownload</span>
+                                <span>Install ROM file (.zip) that you have downloaded</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary font-bold min-w-[24px]">5.</span>
-                                <span>Install GApps (opsional, jika diperlukan)</span>
+                                <span>Install GApps (optional, if needed)</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary font-bold min-w-[24px]">6.</span>
@@ -96,7 +96,7 @@ export default function Readme() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-primary font-bold min-w-[24px]">7.</span>
-                                <span>First boot mungkin memakan waktu 5-10 menit, harap bersabar</span>
+                                <span>First boot may take 5-10 minutes, please be patient</span>
                             </li>
                         </ol>
                     </div>
@@ -109,29 +109,29 @@ export default function Readme() {
                                 <line x1="12" y1="9" x2="12" y2="13"></line>
                                 <line x1="12" y1="17" x2="12.01" y2="17"></line>
                             </svg>
-                            Peringatan
+                            Warning
                         </h3>
                         <ul className="space-y-2 text-red-300/80">
                             <li className="flex items-start gap-3">
                                 <span className="text-red-400 mt-1">⚠</span>
-                                <span>Flashing ROM akan menghapus SEMUA data di perangkat Anda</span>
+                                <span>Flashing ROM will delete ALL data on your device</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-red-400 mt-1">⚠</span>
-                                <span>Kami tidak bertanggung jawab atas kerusakan yang terjadi pada perangkat Anda</span>
+                                <span>We are not responsible for any damage to your device</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="text-red-400 mt-1">⚠</span>
-                                <span>Lakukan dengan risiko Anda sendiri</span>
+                                <span>Do at your own risk</span>
                             </li>
                         </ul>
                     </div>
 
                     {/* Support */}
                     <div className="bg-zinc-900/30 border border-white/5 rounded-xl p-6 md:p-8 text-center">
-                        <h3 className="text-2xl font-bold text-white mb-4">Butuh Bantuan?</h3>
+                        <h3 className="text-2xl font-bold text-white mb-4">Need Help?</h3>
                         <p className="text-gray-400 mb-6">
-                            Jika Anda mengalami masalah atau memiliki pertanyaan, jangan ragu untuk menghubungi kami.
+                            If you experience any issues or have questions, feel free to contact us.
                         </p>
                         <div className="flex justify-center gap-4">
                             <a href="#" className="px-6 py-3 bg-primary/10 border border-primary/20 text-primary rounded-full font-semibold hover:bg-primary/20 transition-all">
