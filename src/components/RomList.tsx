@@ -1,61 +1,21 @@
 'use client';
 import RomCard from './RomCard';
 import FadeIn from './FadeIn';
+import romsData from '@/data/roms.json';
 
-const ROM_DATA = [
-    {
-        name: 'Evolution X',
-        version: '11.2',
-        androidVersion: '16',
-        maintainer: 'therealmharc',
-        status: 'Official' as const,
-        updatedAt: '2025-09-21',
-        device: 'Redmi Note 10 PRO/MAX (sweet)',
-        image: '/images/roms/Sweet.png',
-        downloadUrl: 'https://cdn.evolution-x.org/sweet/16/EvolutionX-16.0-20250921-sweet-11.2-Official.zip/download',
-        variant: 'GApps' as const,
-        changelogUrl: '#',
-    },
-    {
-        name: 'LineageOS',
-        version: '23.0',
-        androidVersion: '16',
-        maintainer: 'Aryan',
-        status: 'Official' as const,
-        updatedAt: '2025-12-25',
-        device: 'Redmi Note 10 PRO/MAX (sweet)',
-        image: '/images/roms/Sweet.png',
-        downloadUrl: 'https://download.lineageos.org/devices/sweet/builds',
-        variant: 'Vanilla' as const,
-        changelogUrl: '#',
-    },
-    {
-        name: 'CrDroid',
-        version: '12.4',
-        androidVersion: '16',
-        maintainer: 'Pranav-Vashi',
-        status: 'Official' as const,
-        updatedAt: '2025-12-15',
-        device: 'Redmi Note 10 PRO/MAX (sweet)',
-        image: '/images/roms/Sweet.png',
-        downloadUrl: 'https://sourceforge.net/projects/crdroid/files/sweet/12.x/crDroidAndroid-16.0-20251215-sweet-v12.4.zip/download',
-        variant: 'Vanilla' as const,
-        changelogUrl: '#',
-    },
-    {
-        name: 'Orion OS',
-        version: '16.0',
-        androidVersion: '16',
-        maintainer: 'Miez12208',
-        status: 'Unofficial' as const,
-        updatedAt: '2025-12-15',
-        device: 'Redmi Note 10 PRO/MAX (sweet)',
-        image: '/images/roms/Sweet.png',
-        downloadUrl: 'https://gofile.io/d/KAvzvx',
-        variant: 'GApps' as const,
-        changelogUrl: '#',
-    }
-];
+const ROM_DATA = romsData as Array<{
+    name: string;
+    version: string;
+    androidVersion: string;
+    maintainer: string;
+    status: 'Official' | 'Unofficial';
+    updatedAt: string;
+    device: string;
+    image?: string;
+    downloadUrl?: string;
+    variant?: 'GApps' | 'Vanilla';
+    changelogUrl?: string;
+}>;
 
 export default function RomList() {
     return (

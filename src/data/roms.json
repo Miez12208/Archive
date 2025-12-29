@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Evolution X",
+        "version": "11.2",
+        "androidVersion": "16",
+        "maintainer": "therealmharc",
+        "status": "Official",
+        "updatedAt": "2025-09-21",
+        "device": "Redmi Note 10 PRO/MAX (sweet)",
+        "image": "/images/roms/Sweet.png",
+        "downloadUrl": "https://cdn.evolution-x.org/sweet/16/EvolutionX-16.0-20250921-sweet-11.2-Official.zip/download",
+        "variant": "GApps",
+        "changelogUrl": "#"
+    },
+    {
+        "name": "LineageOS",
+        "version": "23.0",
+        "androidVersion": "16",
+        "maintainer": "Aryan",
+        "status": "Official",
+        "updatedAt": "2025-12-25",
+        "device": "Redmi Note 10 PRO/MAX (sweet)",
+        "image": "/images/roms/Sweet.png",
+        "downloadUrl": "https://download.lineageos.org/devices/sweet/builds",
+        "variant": "Vanilla",
+        "changelogUrl": "#"
+    },
+    {
+        "name": "CrDroid",
+        "version": "12.4",
+        "androidVersion": "16",
+        "maintainer": "Pranav-Vashi",
+        "status": "Official",
+        "updatedAt": "2025-12-15",
+        "device": "Redmi Note 10 PRO/MAX (sweet)",
+        "image": "/images/roms/Sweet.png",
+        "downloadUrl": "https://sourceforge.net/projects/crdroid/files/sweet/12.x/crDroidAndroid-16.0-20251215-sweet-v12.4.zip/download",
+        "variant": "Vanilla",
+        "changelogUrl": "#"
+    },
+    {
+        "name": "Orion OS",
+        "version": "16.0",
+        "androidVersion": "16",
+        "maintainer": "Miez12208",
+        "status": "Unofficial",
+        "updatedAt": "2025-12-15",
+        "device": "Redmi Note 10 PRO/MAX (sweet)",
+        "image": "/images/roms/Sweet.png",
+        "downloadUrl": "https://gofile.io/d/KAvzvx",
+        "variant": "GApps",
+        "changelogUrl": "#"
+    }
+]
