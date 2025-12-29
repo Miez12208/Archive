@@ -30,7 +30,7 @@ const ROM_DATA = [
         changelogUrl: '#',
     },
     {
-        name: 'crDroid',
+        name: 'CrDroid',
         version: '12.4',
         androidVersion: '16',
         maintainer: 'Pranav-Vashi',
