@@ -60,7 +60,8 @@ export default function Hero() {
                     Experience a refined Pixel-like ROM with essential features for smooth performance, stability, and a great user experience.
                 </p>
 
-                <div className="mt-8 md:mt-10 flex justify-center">
+
+                <div className="mt-8 md:mt-10 flex justify-center gap-4">
                     <button
                         onClick={() => {
                             const romSection = document.getElementById('rom-list');
@@ -72,6 +73,22 @@ export default function Hero() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-y-1 transition-transform">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <polyline points="5 12 12 19 19 12"></polyline>
+                        </svg>
+                    </button>
+                    <button
+                        onClick={() => {
+                            const readmeSection = document.getElementById('readme');
+                            readmeSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }}
+                        className="px-8 py-3.5 bg-transparent border border-white/20 text-white rounded-full font-semibold hover:bg-white/5 transition-all flex items-center gap-2 group"
+                    >
+                        README
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
                         </svg>
                     </button>
                 </div>

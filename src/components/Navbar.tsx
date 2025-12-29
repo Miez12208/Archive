@@ -45,7 +45,7 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div>
-                            <span className="text-white">Miez's</span><span className="text-primary">Archive</span>
+                            <span className="text-white">Miez's </span><span className="bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">Archive</span>
                         </div>
                     </div>
 

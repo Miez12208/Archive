@@ -53,7 +53,7 @@ export default function Reviews() {
 
             <div className="max-w-7xl mx-auto px-6 mb-16 text-center relative z-10">
                 <h2 className="text-4xl md:text-6xl font-bold mb-4">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/60">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-white">
                         Community Reviews
                     </span>
                 </h2>
