@@ -4,7 +4,7 @@ const REVIEWS = [
     {
         name: "Xhn Cibaduyut",
         rating: 5,
-        text: "ROM gaymink wir",
+        text: "ROM gaymink wir, yakali ga di pake aowkawoak",
         rom: "Axion OS",
         avatar: "/avatars/xhn.jpg"
     },
@@ -18,30 +18,30 @@ const REVIEWS = [
     {
         name: "Rusdi Ngawi",
         rating: 5,
-        text: "crDroid customization is insane! So many options to tweak. Perfect untuk yang suka personalisasi.",
+        text: "CrDroid rom stabil dan smooth wajib banget di pakai, kalo ga di pakai atmin murka loh ya.",
         rom: "crDroid",
-        avatar: "/avatars/rusdi.png"
+        avatar: "/avatars/rusdi.jpg"
     },
     {
-        name: "Dimas Anggara",
+        name: "Mas Gatot",
         rating: 5,
-        text: "Pixel Experience feels exactly like a Pixel. Clean, stable, dan update rutin. Best stock-like ROM!",
+        text: "Kesan indah pertama kau datang seolah cinta dengan senang hati aku menerima emuach",
         rom: "Pixel Experience",
-        avatar: "/avatars/dimas.png"
+        avatar: "/avatars/gatot.png"
     },
     {
-        name: "Eko Prasetyo",
+        name: "DreamyBull",
         rating: 5,
-        text: "RisingOS UI is beautiful. Love the new control center style. Animasinya juga buttery smooth.",
+        text: "RisingOS UI is beautiful. Jangan lupa di pakai yh ganteng",
         rom: "RisingOS",
-        avatar: "/avatars/eko.png"
+        avatar: "/avatars/amba.png"
     },
     {
-        name: "Fajar Nugraha",
+        name: "Si Imut",
         rating: 5,
-        text: "Gaming performance on Nusantara Project is top notch. MLBB 120fps stable tanpa lag!",
-        rom: "Nusantara Project",
-        avatar: "/avatars/fajar.png"
+        text: "ROM gacor",
+        rom: "Pixel Experience",
+        avatar: "/avatars/imut.png"
     }
 ];
 
