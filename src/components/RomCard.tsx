@@ -8,6 +8,7 @@ interface RomProps {
     device: string;
     image?: string;
     color?: string;
+    downloadUrl?: string;
 }
 
 export default function RomCard({ rom }: { rom: RomProps }) {
@@ -46,7 +47,12 @@ export default function RomCard({ rom }: { rom: RomProps }) {
                             )}
                         </div>
 
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-all hover:rotate-45">
+                        <a
+                            href={rom.downloadUrl || '#'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-all hover:rotate-45"
+                        >
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                         </a>
                     </div>

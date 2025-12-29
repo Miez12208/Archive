@@ -12,6 +12,7 @@ const ROM_DATA = [
         updatedAt: '2 days ago',
         device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
+        downloadUrl: 'https://cdn.evolution-x.org/sweet/16/EvolutionX-16.0-20250921-sweet-11.2-Official.zip/download',
     },
     {
         name: 'LineageOS',
@@ -20,8 +21,9 @@ const ROM_DATA = [
         maintainer: 'bgcng',
         status: 'Official' as const,
         updatedAt: '5 days ago',
-        device: 'Poco F5 (marble)',
+        device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
+        downloadUrl: '#',
     },
     {
         name: 'crDroid',
@@ -30,8 +32,9 @@ const ROM_DATA = [
         maintainer: 'raysurya',
         status: 'Official' as const,
         updatedAt: '1 week ago',
-        device: 'Xiaomi 13 (fuxi)',
+        device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
+        downloadUrl: '#',
     },
     {
         name: 'Pixel Experience',
@@ -40,8 +43,9 @@ const ROM_DATA = [
         maintainer: 'jhenrique',
         status: 'Unofficial' as const,
         updatedAt: '2 weeks ago',
-        device: 'Redmi Note 10 (mojito)',
+        device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
+        downloadUrl: '#',
     },
     {
         name: 'Nusantara Project',
@@ -50,8 +54,9 @@ const ROM_DATA = [
         maintainer: 'rputra',
         status: 'Official' as const,
         updatedAt: '3 days ago',
-        device: 'Poco X3 Pro (vayu)',
+        device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
+        downloadUrl: '#',
     },
     {
         name: 'RisingOS',
@@ -60,8 +65,9 @@ const ROM_DATA = [
         maintainer: 'source',
         status: 'Unofficial' as const,
         updatedAt: 'Yesterday',
-        device: 'Poco F5 (marble)',
+        device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
+        downloadUrl: '#',
     }
 ];
 
