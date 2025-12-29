@@ -6,12 +6,12 @@ export default function Footer() {
                     <h3 className="text-2xl font-bold tracking-tighter text-white mb-6">Miez's<span className="text-primary">Archive</span></h3>
                     <div className="flex gap-6 text-sm text-gray-500">
                         <a href="#" className="hover:text-white transition-colors">Telegram</a>
-                        <a href="#" className="hover:text-white transition-colors">GitHub</a>
+                        <a href="https://github.com/miez12208" className="hover:text-white transition-colors">GitHub</a>
                         <a href="#" className="hover:text-white transition-colors">Discord</a>
                     </div>
                 </div>
                 <div className="mt-8 md:mt-0 text-right">
-                    <p className="text-xs text-gray-600">© 2024</p>
+                    <p className="text-xs text-gray-600">© 2025</p>
                 </div>
             </div>
         </footer>

@@ -11,6 +11,7 @@ const ROM_DATA = [
         status: 'Official' as const,
         updatedAt: '2 days ago',
         device: 'Redmi Note 10 PRO/MAX (sweet)',
+        image: '/images/roms/Sweet.png',
     },
     {
         name: 'LineageOS',
@@ -20,6 +21,7 @@ const ROM_DATA = [
         status: 'Official' as const,
         updatedAt: '5 days ago',
         device: 'Poco F5 (marble)',
+        image: '/images/roms/Sweet.png',
     },
     {
         name: 'crDroid',
@@ -29,6 +31,7 @@ const ROM_DATA = [
         status: 'Official' as const,
         updatedAt: '1 week ago',
         device: 'Xiaomi 13 (fuxi)',
+        image: '/images/roms/Sweet.png',
     },
     {
         name: 'Pixel Experience',
@@ -38,6 +41,7 @@ const ROM_DATA = [
         status: 'Unofficial' as const,
         updatedAt: '2 weeks ago',
         device: 'Redmi Note 10 (mojito)',
+        image: '/images/roms/Sweet.png',
     },
     {
         name: 'Nusantara Project',
@@ -47,6 +51,7 @@ const ROM_DATA = [
         status: 'Official' as const,
         updatedAt: '3 days ago',
         device: 'Poco X3 Pro (vayu)',
+        image: '/images/roms/Sweet.png',
     },
     {
         name: 'RisingOS',
@@ -56,6 +61,7 @@ const ROM_DATA = [
         status: 'Unofficial' as const,
         updatedAt: 'Yesterday',
         device: 'Poco F5 (marble)',
+        image: '/images/roms/Sweet.png',
     }
 ];
 

@@ -6,6 +6,7 @@ interface RomProps {
     status: 'Official' | 'Unofficial';
     updatedAt: string;
     device: string;
+    image?: string;
     color?: string;
 }
 
@@ -20,8 +21,30 @@ export default function RomCard({ rom }: { rom: RomProps }) {
 
             <div className="flex flex-col h-full justify-between relative z-10">
                 <div>
-                    <div className="flex justify-end items-start mb-6">
-
+                    <div className="flex justify-between items-start mb-6">
+                        {/* Phone Avatar */}
+                        <div className="w-16 h-16 p-2 rounded-sm bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 border border-white/10 flex items-center justify-center overflow-hidden group-hover:border-primary/30 transition-all">
+                            {rom.image ? (
+                                <img
+                                    src={rom.image}
+                                    alt={rom.device}
+                                    className="w-full h-full object-cover"
+                                />
+                            ) : (
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="w-8 h-8 text-gray-400 group-hover:text-primary transition-colors"
+                                >
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                    <line x1="12" y1="18" x2="12.01" y2="18" />
+                                </svg>
+                            )}
+                        </div>
 
                         <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-all hover:rotate-45">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
