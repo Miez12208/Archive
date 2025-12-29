@@ -5,7 +5,7 @@ export default function Footer() {
                 <div>
                     <h3 className="text-2xl font-bold tracking-tighter text-white mb-6">Miez's <span className="bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">Archive</span></h3>
                     <div className="flex gap-6 text-sm text-gray-500">
-                        <a href="#" className="hover:text-white transition-colors">Telegram</a>
+                        <a href="https://t.me/miez12208" className="hover:text-white transition-colors">Telegram</a>
                         <a href="https://github.com/miez12208" className="hover:text-white transition-colors">GitHub</a>
                         <a href="#" className="hover:text-white transition-colors">Discord</a>
                     </div>

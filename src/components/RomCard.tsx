@@ -9,6 +9,8 @@ interface RomProps {
     image?: string;
     color?: string;
     downloadUrl?: string;
+    variant?: 'GApps' | 'Vanilla';
+    changelogUrl?: string;
 }
 
 export default function RomCard({ rom }: { rom: RomProps }) {
@@ -70,6 +72,14 @@ export default function RomCard({ rom }: { rom: RomProps }) {
                         <span className="px-2.5 py-1 rounded-md bg-white/5 border border-white/5 text-xs text-gray-400 font-medium">
                             v{rom.version}
                         </span>
+                        {rom.variant && (
+                            <span className={`px-2.5 py-1 rounded-md border text-xs font-medium ${rom.variant === 'GApps'
+                                ? 'bg-blue-500/10 border-blue-500/20 text-blue-400'
+                                : 'bg-purple-500/10 border-purple-500/20 text-purple-400'
+                                }`}>
+                                {rom.variant}
+                            </span>
+                        )}
                     </div>
                 </div>
 
@@ -86,6 +96,23 @@ export default function RomCard({ rom }: { rom: RomProps }) {
                         <span className="text-gray-500">Updated</span>
                         <span className="text-xs text-gray-600">{rom.updatedAt}</span>
                     </div>
+
+                    {/* Changelogs Button */}
+                    {rom.changelogUrl && (
+                        <a
+                            href={rom.changelogUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 w-full py-2.5 bg-white text-black text-center rounded-lg font-semibold text-sm hover:bg-gray-100 transition-all flex items-center justify-center gap-2 group"
+                        >
+                            Changelogs
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

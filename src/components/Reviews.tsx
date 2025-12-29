@@ -30,7 +30,7 @@ const REVIEWS = [
         avatar: "/avatars/gatot.png"
     },
     {
-        name: "DreamyBull",
+        name: "Mas Amba",
         rating: 5,
         text: "RisingOS UI is beautiful. Jangan lupa di pakai yh ganteng",
         rom: "RisingOS",

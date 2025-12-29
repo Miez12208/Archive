@@ -13,6 +13,8 @@ const ROM_DATA = [
         device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
         downloadUrl: 'https://cdn.evolution-x.org/sweet/16/EvolutionX-16.0-20250921-sweet-11.2-Official.zip/download',
+        variant: 'GApps' as const,
+        changelogUrl: '#',
     },
     {
         name: 'LineageOS',
@@ -24,6 +26,8 @@ const ROM_DATA = [
         device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
         downloadUrl: 'https://download.lineageos.org/devices/sweet/builds',
+        variant: 'Vanilla' as const,
+        changelogUrl: '#',
     },
     {
         name: 'crDroid',
@@ -35,6 +39,8 @@ const ROM_DATA = [
         device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
         downloadUrl: 'https://sourceforge.net/projects/crdroid/files/sweet/12.x/crDroidAndroid-16.0-20251215-sweet-v12.4.zip/download',
+        variant: 'Vanilla' as const,
+        changelogUrl: '#',
     },
     {
         name: 'Orion OS',
@@ -46,28 +52,8 @@ const ROM_DATA = [
         device: 'Redmi Note 10 PRO/MAX (sweet)',
         image: '/images/roms/Sweet.png',
         downloadUrl: 'https://gofile.io/d/KAvzvx',
-    },
-    {
-        name: 'Nusantara Project',
-        version: 'LTS',
-        androidVersion: '13',
-        maintainer: 'rputra',
-        status: 'Official' as const,
-        updatedAt: '3 days ago',
-        device: 'Redmi Note 10 PRO/MAX (sweet)',
-        image: '/images/roms/Sweet.png',
-        downloadUrl: '#',
-    },
-    {
-        name: 'RisingOS',
-        version: '2.0.1',
-        androidVersion: '14',
-        maintainer: 'source',
-        status: 'Unofficial' as const,
-        updatedAt: 'Yesterday',
-        device: 'Redmi Note 10 PRO/MAX (sweet)',
-        image: '/images/roms/Sweet.png',
-        downloadUrl: '#',
+        variant: 'GApps' as const,
+        changelogUrl: '#',
     }
 ];
 
