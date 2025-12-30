@@ -4,7 +4,7 @@ const REVIEWS = [
     {
         name: "Xhn Cibaduyut",
         rating: 5,
-        text: "ROM gaymink wir, yakali ga di pake aowkawoak",
+        text: "Best roms simple minimalist smooth asf",
         rom: "Axion OS",
         avatar: "/avatars/xhn.jpg"
     },
